@@ -4,7 +4,7 @@
    $user_check = $_SESSION['login_user'];
    $tipo_user = $_SESSION['username'];
 
-   $sqlqueryV = "SELECT *  FROM usuarios WHERE nombre = '$user_check' ";
+   $sqlqueryV = "SELECT *  FROM users WHERE nombre_user = '$user_check' ";
 
           if ($resultV = $mysqli->query($sqlqueryV))
           {
@@ -12,7 +12,7 @@
             {
               while ($rowV = $resultV->fetch_object())
               {
-                $id_user= $rowV->id_usuario;
+                $id_user= $rowV->id_user;
               }
              }
           }

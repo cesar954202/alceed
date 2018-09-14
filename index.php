@@ -10,7 +10,7 @@
 
 
 
-      $sql= "SELECT * FROM usuarios WHERE nombre = '$myusername' and password = '$mypassword'";
+      $sql= "SELECT * FROM users WHERE nombre_user = '$myusername' and pass_user = '$mypassword'";
       $result = mysqli_query($mysqli,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
@@ -72,10 +72,10 @@
 
         <form class="row grey darken-4 white-text z-depth-5" action="" method="post" enctype="multipart/form-data" >
         <div class="row"><center><h4 class="center col s12" >Bienvenido</h4></center></div>
-        <div class="row"><center><h6 class="center col s12" >Sistema para control de mantenimeinto a chapas y cajas de seguridad</h6><br></center></div>
+        <div class="row"><center><h6 class="center col s12" >Nuestro proyecto consiste en desarrollar un sistema con una interfaz web, en el cual, el usuario en un ambiente de juego podrá adquirir y poner en práctica conocimiento relacionado a emprender y administrar un negocio. En él se enfrentará a decisiones como elegir algún giro económico (Industrial, comercial o se servicios), elegir proveedores para la materia prima del producto que venderá su empresa, planificar y obtener costo-beneficio mediante un punto de equilibrio, entre otras; el sistema cuenta con una opción en la que un agente con el alias “ALCEED” a cambio de una retribución onerosa, le asesorará en cuanto a la toma de decisiones, este asesor usara algoritmos de inteligencia artificial para aproximar la solución más optima al problema que se tenga por resolver..</h6><br></center></div>
 
 
-        <div class="row center"><img src="img/logo1.png"></div>
+        <div class="row center"><img src="img/Escudo_UdeG.svg" width="250" height="300"></div>
         
 
         <div class="row">
